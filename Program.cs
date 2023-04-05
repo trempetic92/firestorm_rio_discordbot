@@ -542,8 +542,8 @@ public class FioModule : ModuleBase<SocketCommandContext>
         try
         {
             var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Authorization", "Bearer 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");
-            client.DefaultRequestHeaders.Add("OpenAI-Organization-Id", "org-TnsseoHYfjML2iacttYYunzf");
+            client.DefaultRequestHeaders.Add("Authorization", "Bearer *************************");
+            client.DefaultRequestHeaders.Add("OpenAI-Organization-Id", "********************************");
             var data = new { prompt = message };
             var json = JsonConvert.SerializeObject(data);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
